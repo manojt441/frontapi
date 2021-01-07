@@ -1,0 +1,29 @@
+<table class="table table-striped p-5">
+    <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Email</th>
+            <th>Salary</th>
+            <th>Designation</th>
+            <th>Action</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let obj of employees ">
+            <td>{{obj.name}}</td>
+            <td>{{obj.email}}</td>
+            <td>{{obj.salary}}</td>
+            <td>{{obj.designation}}</td>
+            <td>
+                <a class="btn btn-warning m-3" routerLink="edit/{{obj._id}}">Edit</a>
+                <a class=" btn btn-danger " (click)="deleteEmployee(obj._id) ">Delete</a>
+
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<div class="m-5 "></div>

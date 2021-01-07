@@ -1,0 +1,38 @@
+<div class="card">
+    <div class="card-header">
+        <span class="text-muted text-bold">Employee Manager</span>
+    </div>
+    <div class="card-body">
+        <form (submit)="updateEmployee($event)">
+            <div class="form-group">
+                <div class="col-md-4 d-inline">
+                    <label for="name" class="text-sm text-default">Name: </label> <br>
+
+                    <input type="text" class="form-group" class="text-muted " name="name" [(ngModel)]="employeeservice.name">
+                    <br>
+
+                    <label for="email " class="text-sm text-default ">Email: </label> <br>
+
+                    <input type="text " class="form-group " class="text-muted " name="email" [(ngModel)]="employeeservice.email"> <br>
+
+                    <label for="salary " class="text-sm text-default ">Salary: </label> <br>
+
+                    <input type="text " class="form-group " class="text-muted " name="Salary" [(ngModel)]="employeeservice.salary"> <br>
+
+                    <br>
+
+                    <label for="designation " class="text-sm text-default ">Designation: </label> <br>
+
+                    <input type="text " class="form-group " class="text-muted " name="Designation" [(ngModel)]="employeeservice.designation"> <br>
+
+
+                    <br>
+                    <input type="submit" class="btn btn-info " value="Update Employee">
+
+                </div>
+            </div>
+        </form>
+        <hr>
+
+    </div>
+</div>
